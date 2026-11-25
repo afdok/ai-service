@@ -1,0 +1,46 @@
+{
+  "name": "ai-service",
+  "version": "0.1.0",
+  "description": "Librairie IA générique : fournisseurs de modèles, garde-fous, limite de débit, rédaction, résumé audio et moteur de chat avec approbation des outils.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "instructions"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@ai-sdk/azure": "4.0.90",
+    "@ai-sdk/google": "^4.0.63",
+    "@ai-sdk/mistral": "4.0.56",
+    "@ai-sdk/openai-compatible": "3.0.62",
+    "zod": "^4.5.4"
+  },
+  "peerDependencies": {
+    "ai": "^7.0.92"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "ai": "^7.0.92",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  }
+}
