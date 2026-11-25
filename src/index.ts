@@ -5,3 +5,6 @@ export * from './providers/config.js';
 export * from './providers/resolver.js';
 
 export * from './crypto/aes-gcm.js';
+
+export * from './security/limits.js';
+export * from './security/untrusted-data.js';
