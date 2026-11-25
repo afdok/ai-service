@@ -17,3 +17,7 @@ export * from './instructions/instructions.js';
 
 export * from './writing/writing.js';
 export * from './audio/audio-summary.js';
+
+export * from './chat/history.js';
+export * from './chat/tool-policy.js';
+export * from './chat/chat.js';
