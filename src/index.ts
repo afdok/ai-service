@@ -8,3 +8,5 @@ export * from './crypto/aes-gcm.js';
 
 export * from './security/limits.js';
 export * from './security/untrusted-data.js';
+
+export * from './rate-limit/store.js';
