@@ -12,3 +12,5 @@ export * from './security/untrusted-data.js';
 export * from './rate-limit/store.js';
 
 export * from './usage/usage.js';
+
+export * from './instructions/instructions.js';
